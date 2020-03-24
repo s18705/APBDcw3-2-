@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace APBDcw3_2_.Models
 {
-    public class Studen
+    public class Student
     {
         public int IdStudent { get; set; }
         
