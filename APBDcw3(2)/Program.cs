@@ -10,17 +10,31 @@ using Microsoft.Extensions.Logging;
 namespace APBDcw3_2_
 {
     public class Program
-    {
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
+    { 
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+         public static void Main(string[] args)
+         {
+                //Wrorzec Budowniczy - Biulder
+                Host.CreateDefaultBuilder(args)
+                    .ConfigureWebHostDefaults(webBuilder =>
+                    {
+                        webBuilder.UseStartup<Startup>();
+                    })
+                    .Build() //IHost
+                    .Run();
+         }
+
+
+     //   public static void Main(string[] args)
+     //  {
+     //       CreateHostBuilder(args).Build().Run();
+     //   }
+
+     //   public static IHostBuilder CreateHostBuilder(string[] args) =>
+     //       Host.CreateDefaultBuilder(args)
+     //           .ConfigureWebHostDefaults(webBuilder =>
+     //           {
+     //               webBuilder.UseStartup<Startup>();
+     //           });
     }
 }

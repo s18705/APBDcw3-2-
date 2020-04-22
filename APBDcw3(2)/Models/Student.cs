@@ -14,6 +14,7 @@ namespace APBDcw3_2_.Models
         public string LasName { get; set; }
 
         public string IndexNumber { get; set; }
+        
         public string LastName { get; internal set; }
     }
 }
